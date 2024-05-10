@@ -10,8 +10,14 @@ int main() {
 
     WindowManagerSystem windowManagerSystem;
 
+    int state=0;
     while (!glfwWindowShouldClose(windowManagerSystem.getMain())) {
         windowManagerSystem.updateWindows();
+        state = glfwGetKey(windowManagerSystem.getMain(), GLFW_KEY_E);
+        if (state == GLFW_PRESS)
+        {
+            windowManagerSystem.createWindow(assets);
+        }
     }
 
     /* Cleanup */

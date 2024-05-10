@@ -34,6 +34,7 @@ bld/
 
 #Build results cmake
 cmake-build-debug/
+cmake-build-release/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
